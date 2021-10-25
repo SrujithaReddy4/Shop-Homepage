@@ -21,7 +21,10 @@ const Product = ({product}) => {
 
                  <Card.Text as='h3'>${product.price}</Card.Text>
                  <div class="text-center">
-                     <a class="btn btn-outline-dark mt-auto" href="#">View options
+                     <a class="btn btn-outline-dark mt-auto" href="#"> 
+                      <a class="btn btn-outline-dark mt-auto" href="#">
+                     {product.rating > 0 ?  'Add to Cart': 'View Options'}
+                     </a>
                      </a>
                  </div>
            </Card.Body>
